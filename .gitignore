@@ -3,3 +3,9 @@
 /deps
 erl_crash.dump
 *.ez
+.gitignore
+README.md
+config/
+lib/
+mix.exs
+test/
