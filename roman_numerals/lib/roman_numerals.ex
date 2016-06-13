@@ -14,7 +14,23 @@ defmodule RomanNumerals do
         String.replace("LXL", "XC") |>
         String.replace("CCCC", "CD") |>
         String.replace("DCD", "CM")
+    end
 
+    def to_arabic(string) do
+        string |>
+        String.replace("CM", "DCD") |>
+        String.replace("CD", "CCCC" ) |>
+        String.replace("XC", "LXL") |>
+        String.replace("XL", "XXXX" ) |>
+        String.replace("IX" , "VIV" ) |>
+        String.replace("IV", "IIII" ) |>
+        String.replace( "M", "DD") |>
+        String.replace("D","CCCCC" ) |>
+        String.replace("C","LL" ) |>
+        String.replace("L","XXXXX" ) |>
+        String.replace("X", "VV") |>
+        String.replace("V","IIIII") |>
+        String.length
     end
 
 end

@@ -31,6 +31,10 @@ defmodule RomanNumeralsTest do
       test "convert #{@arabic} to #{@roman}" do
          assert RomanNumerals.to_roman(@arabic) == @roman
       end
+
+      test "convert #{roman} to #{arabic}" do
+         assert RomanNumerals.to_arabic(@roman) == @arabic
+      end
   end
 
 end
